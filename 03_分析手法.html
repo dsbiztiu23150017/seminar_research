@@ -242,14 +242,28 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">目次</h2>
    
-  <ul class="collapse">
+  <ul>
   <li><a href="#手法の選定" id="toc-手法の選定" class="nav-link active" data-scroll-target="#手法の選定"><span class="header-section-number">3.1</span> 手法の選定</a></li>
   <li><a href="#線形回帰ベースライン" id="toc-線形回帰ベースライン" class="nav-link" data-scroll-target="#線形回帰ベースライン"><span class="header-section-number">3.2</span> 線形回帰（ベースライン）</a></li>
-  <li><a href="#回帰木rpart" id="toc-回帰木rpart" class="nav-link" data-scroll-target="#回帰木rpart"><span class="header-section-number">3.3</span> 回帰木（rpart）</a></li>
+  <li><a href="#回帰木rpart" id="toc-回帰木rpart" class="nav-link" data-scroll-target="#回帰木rpart"><span class="header-section-number">3.3</span> 回帰木（rpart）</a>
+  <ul class="collapse">
+  <li><a href="#分割の基準" id="toc-分割の基準" class="nav-link" data-scroll-target="#分割の基準">分割の基準</a></li>
+  <li><a href="#決定木の構造" id="toc-決定木の構造" class="nav-link" data-scroll-target="#決定木の構造">決定木の構造</a></li>
+  <li><a href="#剪定pruning" id="toc-剪定pruning" class="nav-link" data-scroll-target="#剪定pruning">剪定（Pruning）</a></li>
+  </ul></li>
   <li><a href="#説明変数の設計" id="toc-説明変数の設計" class="nav-link" data-scroll-target="#説明変数の設計"><span class="header-section-number">3.4</span> 説明変数の設計</a></li>
   <li><a href="#分析パイプライン" id="toc-分析パイプライン" class="nav-link" data-scroll-target="#分析パイプライン"><span class="header-section-number">3.5</span> 分析パイプライン</a></li>
-  <li><a href="#精度評価指標" id="toc-精度評価指標" class="nav-link" data-scroll-target="#精度評価指標"><span class="header-section-number">3.6</span> 精度評価指標</a></li>
-  <li><a href="#追加パッケージの利用発展" id="toc-追加パッケージの利用発展" class="nav-link" data-scroll-target="#追加パッケージの利用発展"><span class="header-section-number">3.7</span> 追加パッケージの利用（発展）</a></li>
+  <li><a href="#精度評価指標" id="toc-精度評価指標" class="nav-link" data-scroll-target="#精度評価指標"><span class="header-section-number">3.6</span> 精度評価指標</a>
+  <ul class="collapse">
+  <li><a href="#平均絶対誤差mae" id="toc-平均絶対誤差mae" class="nav-link" data-scroll-target="#平均絶対誤差mae">平均絶対誤差（MAE）</a></li>
+  <li><a href="#二乗平均平方根誤差rmse" id="toc-二乗平均平方根誤差rmse" class="nav-link" data-scroll-target="#二乗平均平方根誤差rmse">二乗平均平方根誤差（RMSE）</a></li>
+  <li><a href="#決定係数r²" id="toc-決定係数r²" class="nav-link" data-scroll-target="#決定係数r²">決定係数（R²）</a></li>
+  </ul></li>
+  <li><a href="#追加パッケージの利用発展" id="toc-追加パッケージの利用発展" class="nav-link" data-scroll-target="#追加パッケージの利用発展"><span class="header-section-number">3.7</span> 追加パッケージの利用（発展）</a>
+  <ul class="collapse">
+  <li><a href="#代表的な追加パッケージ" id="toc-代表的な追加パッケージ" class="nav-link" data-scroll-target="#代表的な追加パッケージ">代表的な追加パッケージ</a></li>
+  <li><a href="#使用例lightgbm-で回帰木を置き換える場合" id="toc-使用例lightgbm-で回帰木を置き換える場合" class="nav-link" data-scroll-target="#使用例lightgbm-で回帰木を置き換える場合">使用例：LightGBM で回帰木を置き換える場合</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
