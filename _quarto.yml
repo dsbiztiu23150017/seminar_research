@@ -24,7 +24,7 @@ format:
     embed-resources: false
     lightbox: true
     toc: true
-    toc-depth: 2
+    toc-depth: 3
     number-sections: true
     number-depth: 2
     code-line-numbers: false
@@ -41,9 +41,9 @@ format:
     mermaid:
       theme: default
 language:
-  title-block-author-single: "作成者"
+  title-block-author-single: "Sota Kurihara"
   title-block-author-plural: "作成者"
-  title-block-published: "作成日"
+  title-block-published: "2026/05/01"
   section-title-appendices: "付録"
 crossref:
   fig-title: "図"
