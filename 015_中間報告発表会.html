@@ -46,6 +46,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-59b6da75df3a5664e224ba7be699d449.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -232,15 +235,33 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="リサーチクエスチョンと仮説" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="リサーチクエスチョンと仮説"><span class="header-section-number">2.2</span> リサーチクエスチョンと仮説</h2>
-<p>近年のゲーム市場におけるPCゲームの台頭は凄まじく、プラットフォーム「Steam」を中心として幅広い層に普及している。そんな中の運営において、新規顧客の獲得コストは往々にして維持コストよりも増大する傾向にあるため、プレイヤーの離脱要因を特定し維持率を向上させることは大きな課題だと思う。 <img src="seminar_research/steampop.png&quot;" class="img-fluid" alt="普及"></p>
+<p>近年のゲーム市場におけるPCゲームの台頭は凄まじく、プラットフォーム「Steam」を中心として幅広い層に普及している。そんな中の運営において、新規顧客の獲得コストは往々にして維持コストよりも増大する傾向にあるため、プレイヤーの離脱要因を特定し維持率を向上させることは大きな課題だと思う。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="steampop.png&quot;" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="普及"><img src="steampop.png&quot;" class="img-fluid figure-img" alt="普及"></a></p>
+<figcaption>普及</figcaption>
+</figure>
+</div>
 <p>今回はSteamのユーザーレビューの特性を利用し、テキストマイニングを行うことでそのゲームの本質を分析し、同時にそのジャンルの特徴や課題（離脱要因）を明らかにするのが目的である。さらに、今回のデータに含まれているプレイ時間（ユーザーフェーズ）と結び付けて分析することでユーザーの熟練度に応じた動的な課題も明らかにできる。</p>
 <p>RQ：離脱時期、レビューの賛否に応じてレビュートピックに統計的に有意な差は現れるか</p>
 <p>仮説：初期の高評価と長期の低評価にはレビュー内容に相関があるのではないか</p>
 </section>
 <section id="使用データの概要" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="使用データの概要"><span class="header-section-number">2.3</span> 使用データの概要</h2>
-<p>データは[SteamPowered.com]というレビュー内容取得APIを使って入手する そこで入手できるデータはこちら ・レビュースコア 　ースコア説明 ・肯定的、否定的なレビューそれぞれの総数 ・各レビュー 　・ユーザーの評価 　・直近2週間のプレイ時間 　・投稿時点の累計プレイ時間 　・最終プレイ時間 　・そのユーザーの情報 　・参考になった！と評価した人の数 　・開発者からのこのレビューへのコメント<br>
-　 etc..</p>
+<p>データは[SteamPowered.com]というレビュー内容取得APIを使って入手する</p>
+<p>そこで入手できるデータはこちら</p>
+<p>・レビュースコア</p>
+<p>　ースコア説明</p>
+<p>・肯定的、否定的なレビューそれぞれの総数</p>
+<p>・各レビュー</p>
+<p>　・ユーザーの評価</p>
+<p>　・直近2週間のプレイ時間</p>
+<p>　・投稿時点の累計プレイ時間</p>
+<p>　・最終プレイ時間</p>
+<p>　・そのユーザーの情報</p>
+<p>　・参考になった！と評価した人の数</p>
+<p>　・開発者からのこのレビューへのコメント</p>
+<p>　 etc..</p>
 <p>Steamは多言語プラットフォームだが、languageのオプションを付けることで日本語のみのレビューを絞り込める！</p>
 <p>このAPIを使って特定のゲームのレビューをまとめて収集することが可能になる。</p>
 </section>
@@ -716,6 +737,38 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
