@@ -6,12 +6,13 @@ project:
     - css/
 
 book:
-  title: "東京都内シェアサイクル利用数の予測モデル構築に関する研究"
-  author: "東京国際大学 商学部 <br>データサイエンスコース<br>東国 花子"
+  title: "ゲームの売り上げに関する研究"
+  author: "東京国際大学 商学部 <br>データサイエンスコース<br>栗原　爽汰"
   date: today
   chapters:
     - index.qmd
     - 01_研究概要.qmd
+    - 015_中間報告発表会.qmd
     - 02_データ.qmd
     - 03_分析手法.qmd
     - 04_結果と考察.qmd
