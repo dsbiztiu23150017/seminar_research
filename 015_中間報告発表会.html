@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="栗原　爽汰">
 
-<title>3&nbsp; データ – ゲームの売り上げに関する研究</title>
+<title>2&nbsp; 中間報告発表会 – ゲームの売り上げに関する研究</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +34,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./03_分析手法.html" rel="next">
-<link href="./015_中間報告発表会.html" rel="prev">
+<link href="./02_データ.html" rel="next">
+<link href="./01_研究概要.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -45,9 +46,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-59b6da75df3a5664e224ba7be699d449.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -75,14 +73,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "サーチ"
   }
 }</script>
-<meta name="mermaid-theme" content="default">
-<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
-<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
-
-<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-
 
 
 </head>
@@ -96,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02_データ.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">データ</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./015_中間報告発表会.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">中間報告発表会</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="サーチ" onclick="window.quartoOpenSearch();">
@@ -135,13 +125,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./015_中間報告発表会.html" class="sidebar-item-text sidebar-link">
+  <a href="./015_中間報告発表会.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">中間報告発表会</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_データ.html" class="sidebar-item-text sidebar-link active">
+  <a href="./02_データ.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">データ</span></span></a>
   </div>
 </li>
@@ -173,17 +163,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">目次</h2>
    
   <ul>
-  <li><a href="#データの出典" id="toc-データの出典" class="nav-link active" data-scroll-target="#データの出典"><span class="header-section-number">3.1</span> データの出典</a></li>
-  <li><a href="#データの準備" id="toc-データの準備" class="nav-link" data-scroll-target="#データの準備"><span class="header-section-number">3.2</span> データの準備</a></li>
-  <li><a href="#データ概要" id="toc-データ概要" class="nav-link" data-scroll-target="#データ概要"><span class="header-section-number">3.3</span> データ概要</a>
-  <ul class="collapse">
-  <li><a href="#変数一覧" id="toc-変数一覧" class="nav-link" data-scroll-target="#変数一覧">変数一覧</a></li>
-  </ul></li>
-  <li><a href="#基本統計量" id="toc-基本統計量" class="nav-link" data-scroll-target="#基本統計量"><span class="header-section-number">3.4</span> 基本統計量</a></li>
-  <li><a href="#時系列の可視化" id="toc-時系列の可視化" class="nav-link" data-scroll-target="#時系列の可視化"><span class="header-section-number">3.5</span> 時系列の可視化</a></li>
-  <li><a href="#気象データとの関係" id="toc-気象データとの関係" class="nav-link" data-scroll-target="#気象データとの関係"><span class="header-section-number">3.6</span> 気象データとの関係</a></li>
-  <li><a href="#曜日時間帯パターン" id="toc-曜日時間帯パターン" class="nav-link" data-scroll-target="#曜日時間帯パターン"><span class="header-section-number">3.7</span> 曜日・時間帯パターン</a></li>
-  <li><a href="#前処理パイプライン" id="toc-前処理パイプライン" class="nav-link" data-scroll-target="#前処理パイプライン"><span class="header-section-number">3.8</span> 前処理パイプライン</a></li>
+  <li><a href="#研究件名" id="toc-研究件名" class="nav-link active" data-scroll-target="#研究件名"><span class="header-section-number">2.1</span> １. 研究件名</a></li>
+  <li><a href="#リサーチクエスチョンと仮説" id="toc-リサーチクエスチョンと仮説" class="nav-link" data-scroll-target="#リサーチクエスチョンと仮説"><span class="header-section-number">2.2</span> ２. リサーチクエスチョンと仮説</a></li>
+  <li><a href="#使用データの概要" id="toc-使用データの概要" class="nav-link" data-scroll-target="#使用データの概要"><span class="header-section-number">2.3</span> ３．使用データの概要</a></li>
+  <li><a href="#ここまでの分析結果" id="toc-ここまでの分析結果" class="nav-link" data-scroll-target="#ここまでの分析結果"><span class="header-section-number">2.4</span> ４．ここまでの分析結果</a></li>
+  <li><a href="#現状の困りごとこれからの方針" id="toc-現状の困りごとこれからの方針" class="nav-link" data-scroll-target="#現状の困りごとこれからの方針"><span class="header-section-number">2.5</span> ５．現状の困りごと・これからの方針</a></li>
+  <li><a href="#参考ウェブサイト" id="toc-参考ウェブサイト" class="nav-link" data-scroll-target="#参考ウェブサイト"><span class="header-section-number">2.6</span> 参考ウェブサイト</a></li>
   </ul>
 </nav>
     </div>
@@ -192,13 +177,19 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">データ</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">中間報告発表会</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Sota Kurihara</div>
+    <div class="quarto-title-meta-contents">
+             <p>栗原　爽汰 </p>
+          </div>
+  </div>
     
   
     
@@ -209,180 +200,91 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-tip callout-titled" title="書き方ガイド：データ">
+<div class="callout callout-style-default callout-tip callout-titled" title="書き方ガイド：研究概要">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">ヒント</span>書き方ガイド：データ
+<span class="screen-reader-only">ヒント</span>書き方ガイド：研究概要
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>何を書くか：</strong> 分析に使用するデータの全体像を示す章です。データの出典・構造・基本統計量・可視化を通じて、読者がデータを十分に理解できるようにします。</p>
+<p><strong>何を書くか：</strong> 研究の全体像を簡潔に示す章です。読者がこの章だけで研究の目的・背景・計画を把握できるようにしましょう。</p>
 <p><strong>書き方のコツ：</strong></p>
 <ul>
-<li><strong>データ概要</strong> では、取得元・期間・サンプル数・変数の一覧を明示します</li>
-<li><strong>基本統計量</strong> は表形式で整理し、データの分布を把握できるようにします</li>
-<li><strong>可視化</strong> は目的を明確にして（例：「時系列の傾向を確認する」）、図にキャプションと番号を付けます</li>
-<li>前処理の手順はフロー図で示すと理解しやすくなります</li>
+<li><strong>研究件名</strong> はそのまま報告書タイトルと一致させます</li>
+<li><strong>背景</strong> では「なぜこの研究が必要か」を社会的・学術的な観点から説明します</li>
+<li><strong>目的</strong> は具体的で検証可能な形で記述します（例：「～を予測するモデルを構築する」）</li>
+<li><strong>研究計画</strong> はチェックリスト形式で進捗管理に使えるようにします</li>
 </ul>
 <p><strong>Quartoの機能：</strong></p>
 <ul>
-<li>R コードブロック <code>```{r}</code> でデータ処理と可視化を実行できます</li>
-<li><code>#| label: fig-xxx</code> と <code>#| fig-cap:</code> で図番号とキャプションを自動付与します</li>
-<li><code>@fig-xxx</code> で本文中からクロスリファレンスできます</li>
-<li><code>::: {.panel-tabset}</code> でタブ切替パネルを作成できます</li>
-<li>Mermaid 記法でフロー図を描けます</li>
+<li><code>@引用キー</code> で BibTeX の参考文献を引用できます（例：<code>@Fishman2016</code>）</li>
+<li>表は Markdown のパイプ記法 <code>| 列1 | 列2 |</code> で作成します</li>
+<li>チェックリストは <code>- [x] 完了項目</code> / <code>- [ ] 未完了項目</code> で記述します</li>
 </ul>
 </div>
 </div>
-<section id="データの出典" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="データの出典"><span class="header-section-number">3.1</span> データの出典</h2>
-<div id="tbl-data-source" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-data-source-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-表&nbsp;3.1: データの出典
-</figcaption>
-<div aria-describedby="tbl-data-source-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>項目</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>利用データ</td>
-<td>東京都シェアサイクル事業オープンデータ（※実際の出典に置き換えてください）</td>
-</tr>
-<tr class="even">
-<td>気象データ</td>
-<td>気象庁 過去の気象データ検索（※実際の出典に置き換えてください）</td>
-</tr>
-<tr class="odd">
-<td>取得日</td>
-<td>2025年○月○日</td>
-</tr>
-<tr class="even">
-<td>前処理スクリプト</td>
-<td><code>src/generate_data.R</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
+<section id="研究件名" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="研究件名"><span class="header-section-number">2.1</span> １. 研究件名</h2>
+<p>ゲームのレビューから見る顧客の離脱要因とその改善方法</p>
 </section>
-<section id="データの準備" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="データの準備"><span class="header-section-number">3.2</span> データの準備</h2>
+<section id="リサーチクエスチョンと仮説" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="リサーチクエスチョンと仮説"><span class="header-section-number">2.2</span> ２. リサーチクエスチョンと仮説</h2>
+<p>近年のゲーム市場におけるPCゲームの台頭は凄まじく、プラットフォーム「Steam」を中心として幅広い層に普及している。そんな中の運営において、新規顧客の獲得コストは往々にして維持コストよりも増大する傾向にあるため、プレイヤーの離脱要因を特定し維持率を向上させることは大きな課題だと思う。 <img src="seminar_research/steampop.png&quot;" class="img-fluid" alt="普及"></p>
+<p>今回はSteamのユーザーレビューの特性を利用し、テキストマイニングを行うことでそのゲームの本質を分析し、同時にそのゲーム、ジャンルの課題を明らかにするのが目的である。</p>
 </section>
-<section id="データ概要" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="データ概要"><span class="header-section-number">3.3</span> データ概要</h2>
-<p>本研究では、東京都内のシェアサイクル利用数と気象データを組み合わせた合成データセットを使用する。</p>
-<div id="tbl-data-overview" class="quarto-float quarto-figure quarto-figure-center anchored">
+<section id="使用データの概要" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="使用データの概要"><span class="header-section-number">2.3</span> ３．使用データの概要</h2>
+<p>本研究の目的は以下の通りである。</p>
+<ol type="1">
+<li>東京都内のシェアサイクル利用データと気象データを用いて、時間帯別の利用数を予測するモデルを構築する</li>
+<li>線形回帰と回帰木（rpart）の予測精度を比較し、各手法の特性を明らかにする</li>
+<li>利用数に影響を与える要因を変数重要度分析により特定する</li>
+</ol>
+</section>
+<section id="ここまでの分析結果" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="ここまでの分析結果"><span class="header-section-number">2.4</span> ４．ここまでの分析結果</h2>
+<div id="tbl-schedule" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-data-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-表&nbsp;3.2: データセットの概要
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-schedule-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+表&nbsp;2.1: 研究スケジュール
 </figcaption>
-<div aria-describedby="tbl-data-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="tbl-schedule-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>項目</th>
-<th>内容</th>
+<th>期間</th>
+<th>作業内容</th>
+<th>状態</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>対象期間</td>
-<td>2024年1月1日 〜 2024年12月31日（365日間）</td>
+<td>第1-2週</td>
+<td>テーマ選定・先行研究調査</td>
+<td>完了</td>
 </tr>
 <tr class="even">
-<td>時間粒度</td>
-<td>1時間単位</td>
+<td>第3-4週</td>
+<td>データ収集・前処理</td>
+<td>完了</td>
 </tr>
 <tr class="odd">
-<td>レコード数</td>
-<td>8,760件（365日 × 24時間）</td>
+<td>第5-8週</td>
+<td>モデル構築・精度評価</td>
+<td>完了</td>
 </tr>
 <tr class="even">
-<td>目的変数</td>
-<td>1時間あたりの利用数（count）</td>
+<td>第9-10週</td>
+<td>結果分析・考察</td>
+<td>完了</td>
 </tr>
 <tr class="odd">
-<td>説明変数</td>
-<td>気温、湿度、風速、降雨有無、曜日、時間帯</td>
-</tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
-<section id="変数一覧" class="level3">
-<h3 class="anchored" data-anchor-id="変数一覧">変数一覧</h3>
-<div id="tbl-variables" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-variables-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-表&nbsp;3.3: 変数一覧
-</figcaption>
-<div aria-describedby="tbl-variables-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>変数名</th>
-<th>型</th>
-<th>説明</th>
-<th>単位</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>date</code></td>
-<td>Date</td>
-<td>日付</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td><code>hour</code></td>
-<td>integer</td>
-<td>時間帯（0–23）</td>
-<td>時</td>
-</tr>
-<tr class="odd">
-<td><code>temperature</code></td>
-<td>numeric</td>
-<td>気温</td>
-<td>°C</td>
-</tr>
-<tr class="even">
-<td><code>humidity</code></td>
-<td>numeric</td>
-<td>相対湿度</td>
-<td>%</td>
-</tr>
-<tr class="odd">
-<td><code>wind_speed</code></td>
-<td>numeric</td>
-<td>風速</td>
-<td>m/s</td>
-</tr>
-<tr class="even">
-<td><code>is_rain</code></td>
-<td>integer</td>
-<td>降雨フラグ（0/1）</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td><code>count</code></td>
-<td>integer</td>
-<td>利用数（目的変数）</td>
-<td>台</td>
+<td>第11-12週</td>
+<td>報告書作成・発表準備</td>
+<td>進行中</td>
 </tr>
 </tbody>
 </table>
@@ -390,169 +292,12 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </section>
+<section id="現状の困りごとこれからの方針" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="現状の困りごとこれからの方針"><span class="header-section-number">2.5</span> ５．現状の困りごと・これからの方針</h2>
 </section>
-<section id="基本統計量" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="基本統計量"><span class="header-section-number">3.4</span> 基本統計量</h2>
-<div class="cell">
-<div id="tbl-summary-stats" class="cell quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-summary-stats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-表&nbsp;3.4: 基本統計量
-</figcaption>
-<div aria-describedby="tbl-summary-stats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output-display">
-<table class="cell caption-top table table-sm table-striped small">
-<thead>
-<tr class="header">
-<th style="text-align: left;">変数</th>
-<th style="text-align: right;">平均</th>
-<th style="text-align: right;">標準偏差</th>
-<th style="text-align: right;">最小</th>
-<th style="text-align: right;">中央値</th>
-<th style="text-align: right;">最大</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">temperature</td>
-<td style="text-align: right;">15.0</td>
-<td style="text-align: right;">9.0</td>
-<td style="text-align: right;">-6.1</td>
-<td style="text-align: right;">15.1</td>
-<td style="text-align: right;">36.0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">humidity</td>
-<td style="text-align: right;">60.0</td>
-<td style="text-align: right;">13.4</td>
-<td style="text-align: right;">20.0</td>
-<td style="text-align: right;">60.0</td>
-<td style="text-align: right;">100.0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">wind_speed</td>
-<td style="text-align: right;">2.5</td>
-<td style="text-align: right;">1.8</td>
-<td style="text-align: right;">0.0</td>
-<td style="text-align: right;">2.1</td>
-<td style="text-align: right;">15.3</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">count</td>
-<td style="text-align: right;">63.8</td>
-<td style="text-align: right;">54.0</td>
-<td style="text-align: right;">0.0</td>
-<td style="text-align: right;">48.0</td>
-<td style="text-align: right;">277.0</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</figure>
-</div>
-</div>
-</section>
-<section id="時系列の可視化" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="時系列の可視化"><span class="header-section-number">3.5</span> 時系列の可視化</h2>
-<p><a href="#fig-timeseries" class="quarto-xref">図&nbsp;<span>3.1</span></a> は日別の平均利用数の推移を示す。夏季に利用数が増加し、冬季に減少する季節パターンが確認できる。</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-timeseries" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-timeseries-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="02_データ_files/figure-html/fig-timeseries-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="図&nbsp;3.1: 日別平均利用数の推移"><img src="02_データ_files/figure-html/fig-timeseries-1.png" class="img-fluid figure-img" width="672"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-timeseries-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-図&nbsp;3.1: 日別平均利用数の推移
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="気象データとの関係" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="気象データとの関係"><span class="header-section-number">3.6</span> 気象データとの関係</h2>
-<p><a href="#fig-scatter-temp" class="quarto-xref">図&nbsp;<span>3.2</span></a> は気温と利用数の関係を示す散布図である。気温が高いほど利用数が増加する正の相関が認められる。</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-scatter-temp" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-scatter-temp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="02_データ_files/figure-html/fig-scatter-temp-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="図&nbsp;3.2: 気温と利用数の関係"><img src="02_データ_files/figure-html/fig-scatter-temp-1.png" class="img-fluid figure-img" width="672"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-scatter-temp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-図&nbsp;3.2: 気温と利用数の関係
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="曜日時間帯パターン" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="曜日時間帯パターン"><span class="header-section-number">3.7</span> 曜日・時間帯パターン</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">時間帯別</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">曜日別</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-hourly-pattern" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-hourly-pattern-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="02_データ_files/figure-html/fig-hourly-pattern-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="図&nbsp;3.3: 時間帯別の平均利用数"><img src="02_データ_files/figure-html/fig-hourly-pattern-1.png" class="img-fluid figure-img" width="672"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hourly-pattern-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-図&nbsp;3.3: 時間帯別の平均利用数
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-wday-pattern" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-wday-pattern-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="02_データ_files/figure-html/fig-wday-pattern-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="図&nbsp;3.4: 曜日別の平均利用数"><img src="02_データ_files/figure-html/fig-wday-pattern-1.png" class="img-fluid figure-img" width="672"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-wday-pattern-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-図&nbsp;3.4: 曜日別の平均利用数
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="前処理パイプライン" class="level2" data-number="3.8">
-<h2 data-number="3.8" class="anchored" data-anchor-id="前処理パイプライン"><span class="header-section-number">3.8</span> 前処理パイプライン</h2>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div id="fig-preprocess" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-preprocess-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-<pre class="mermaid mermaid-js" data-label="fig-preprocess">flowchart LR
-    A[元データ取得] --&gt; B[欠損値処理]
-    B --&gt; C[特徴量生成]
-    C --&gt; D[時間帯・曜日&lt;br&gt;ダミー変数化]
-    D --&gt; E[訓練/テスト分割]
-    E --&gt; F[モデル入力]
-</pre>
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-preprocess-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-図&nbsp;3.5: データ前処理パイプライン
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
+<section id="参考ウェブサイト" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="参考ウェブサイト"><span class="header-section-number">2.6</span> 参考ウェブサイト</h2>
+<p>Aikの技術日記 - SteamAPIについてまとめてみた　Part3 https://aik0aaat.hatenadiary.jp/entry/2020/10/11/002757</p>
 
 
 </section>
@@ -960,49 +705,17 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./015_中間報告発表会.html" class="pagination-link" aria-label="中間報告発表会">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">中間報告発表会</span></span>
+      <a href="./01_研究概要.html" class="pagination-link" aria-label="研究概要">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">研究概要</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./03_分析手法.html" class="pagination-link" aria-label="分析手法">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">分析手法</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./02_データ.html" class="pagination-link" aria-label="データ">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">データ</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 
