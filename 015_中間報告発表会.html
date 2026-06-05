@@ -163,11 +163,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">目次</h2>
    
   <ul>
-  <li><a href="#研究件名" id="toc-研究件名" class="nav-link active" data-scroll-target="#研究件名"><span class="header-section-number">2.1</span> １. 研究件名</a></li>
-  <li><a href="#リサーチクエスチョンと仮説" id="toc-リサーチクエスチョンと仮説" class="nav-link" data-scroll-target="#リサーチクエスチョンと仮説"><span class="header-section-number">2.2</span> ２. リサーチクエスチョンと仮説</a></li>
-  <li><a href="#使用データの概要" id="toc-使用データの概要" class="nav-link" data-scroll-target="#使用データの概要"><span class="header-section-number">2.3</span> ３．使用データの概要</a></li>
-  <li><a href="#ここまでの分析結果" id="toc-ここまでの分析結果" class="nav-link" data-scroll-target="#ここまでの分析結果"><span class="header-section-number">2.4</span> ４．ここまでの分析結果</a></li>
-  <li><a href="#現状の困りごとこれからの方針" id="toc-現状の困りごとこれからの方針" class="nav-link" data-scroll-target="#現状の困りごとこれからの方針"><span class="header-section-number">2.5</span> ５．現状の困りごと・これからの方針</a></li>
+  <li><a href="#研究件名" id="toc-研究件名" class="nav-link active" data-scroll-target="#研究件名"><span class="header-section-number">2.1</span> 研究件名</a></li>
+  <li><a href="#リサーチクエスチョンと仮説" id="toc-リサーチクエスチョンと仮説" class="nav-link" data-scroll-target="#リサーチクエスチョンと仮説"><span class="header-section-number">2.2</span> リサーチクエスチョンと仮説</a></li>
+  <li><a href="#使用データの概要" id="toc-使用データの概要" class="nav-link" data-scroll-target="#使用データの概要"><span class="header-section-number">2.3</span> 使用データの概要</a></li>
+  <li><a href="#ここまでの分析結果" id="toc-ここまでの分析結果" class="nav-link" data-scroll-target="#ここまでの分析結果"><span class="header-section-number">2.4</span> ここまでの分析結果</a></li>
+  <li><a href="#現状の困りごとこれからの方針" id="toc-現状の困りごとこれからの方針" class="nav-link" data-scroll-target="#現状の困りごとこれからの方針"><span class="header-section-number">2.5</span> 現状の困りごと・これからの方針</a></li>
   <li><a href="#参考ウェブサイト" id="toc-参考ウェブサイト" class="nav-link" data-scroll-target="#参考ウェブサイト"><span class="header-section-number">2.6</span> 参考ウェブサイト</a></li>
   </ul>
 </nav>
@@ -227,25 +227,25 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <section id="研究件名" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="研究件名"><span class="header-section-number">2.1</span> １. 研究件名</h2>
+<h2 data-number="2.1" class="anchored" data-anchor-id="研究件名"><span class="header-section-number">2.1</span> 研究件名</h2>
 <p>ゲームのレビューから見る顧客の離脱要因とその改善方法</p>
 </section>
 <section id="リサーチクエスチョンと仮説" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="リサーチクエスチョンと仮説"><span class="header-section-number">2.2</span> ２. リサーチクエスチョンと仮説</h2>
+<h2 data-number="2.2" class="anchored" data-anchor-id="リサーチクエスチョンと仮説"><span class="header-section-number">2.2</span> リサーチクエスチョンと仮説</h2>
 <p>近年のゲーム市場におけるPCゲームの台頭は凄まじく、プラットフォーム「Steam」を中心として幅広い層に普及している。そんな中の運営において、新規顧客の獲得コストは往々にして維持コストよりも増大する傾向にあるため、プレイヤーの離脱要因を特定し維持率を向上させることは大きな課題だと思う。 <img src="seminar_research/steampop.png&quot;" class="img-fluid" alt="普及"></p>
-<p>今回はSteamのユーザーレビューの特性を利用し、テキストマイニングを行うことでそのゲームの本質を分析し、同時にそのゲーム、ジャンルの課題を明らかにするのが目的である。</p>
+<p>今回はSteamのユーザーレビューの特性を利用し、テキストマイニングを行うことでそのゲームの本質を分析し、同時にそのジャンルの特徴や課題（離脱要因）を明らかにするのが目的である。さらに、今回のデータに含まれているプレイ時間（ユーザーフェーズ）と結び付けて分析することでユーザーの熟練度に応じた動的な課題も明らかにできる。</p>
+<p>RQ：離脱時期、レビューの賛否に応じてレビュートピックに統計的に有意な差は現れるか</p>
+<p>仮説：初期の高評価と長期の低評価にはレビュー内容に相関があるのではないか</p>
 </section>
 <section id="使用データの概要" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="使用データの概要"><span class="header-section-number">2.3</span> ３．使用データの概要</h2>
-<p>本研究の目的は以下の通りである。</p>
-<ol type="1">
-<li>東京都内のシェアサイクル利用データと気象データを用いて、時間帯別の利用数を予測するモデルを構築する</li>
-<li>線形回帰と回帰木（rpart）の予測精度を比較し、各手法の特性を明らかにする</li>
-<li>利用数に影響を与える要因を変数重要度分析により特定する</li>
-</ol>
+<h2 data-number="2.3" class="anchored" data-anchor-id="使用データの概要"><span class="header-section-number">2.3</span> 使用データの概要</h2>
+<p>データは[SteamPowered.com]というレビュー内容取得APIを使って入手する そこで入手できるデータはこちら ・レビュースコア 　ースコア説明 ・肯定的、否定的なレビューそれぞれの総数 ・各レビュー 　・ユーザーの評価 　・直近2週間のプレイ時間 　・投稿時点の累計プレイ時間 　・最終プレイ時間 　・そのユーザーの情報 　・参考になった！と評価した人の数 　・開発者からのこのレビューへのコメント<br>
+　 etc..</p>
+<p>Steamは多言語プラットフォームだが、languageのオプションを付けることで日本語のみのレビューを絞り込める！</p>
+<p>このAPIを使って特定のゲームのレビューをまとめて収集することが可能になる。</p>
 </section>
 <section id="ここまでの分析結果" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="ここまでの分析結果"><span class="header-section-number">2.4</span> ４．ここまでの分析結果</h2>
+<h2 data-number="2.4" class="anchored" data-anchor-id="ここまでの分析結果"><span class="header-section-number">2.4</span> ここまでの分析結果</h2>
 <div id="tbl-schedule" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-schedule-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -293,7 +293,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 <section id="現状の困りごとこれからの方針" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="現状の困りごとこれからの方針"><span class="header-section-number">2.5</span> ５．現状の困りごと・これからの方針</h2>
+<h2 data-number="2.5" class="anchored" data-anchor-id="現状の困りごとこれからの方針"><span class="header-section-number">2.5</span> 現状の困りごと・これからの方針</h2>
 </section>
 <section id="参考ウェブサイト" class="level2" data-number="2.6">
 <h2 data-number="2.6" class="anchored" data-anchor-id="参考ウェブサイト"><span class="header-section-number">2.6</span> 参考ウェブサイト</h2>
