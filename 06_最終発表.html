@@ -162,11 +162,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#分析" id="toc-分析" class="nav-link" data-scroll-target="#分析"><span class="header-section-number">7</span> 分析</a>
   <ul class="collapse">
   <li><a href="#ジャンルごとのユーザーの評価まとめ" id="toc-ジャンルごとのユーザーの評価まとめ" class="nav-link" data-scroll-target="#ジャンルごとのユーザーの評価まとめ"><span class="header-section-number">7.1</span> ジャンルごとのユーザーの評価まとめ</a></li>
-  <li><a href="#仮説検証" id="toc-仮説検証" class="nav-link" data-scroll-target="#仮説検証"><span class="header-section-number">7.2</span> 仮説検証</a></li>
   </ul></li>
-  <li><a href="#その他のジャンルの形態素解析" id="toc-その他のジャンルの形態素解析" class="nav-link" data-scroll-target="#その他のジャンルの形態素解析"><span class="header-section-number">8</span> その他のジャンルの形態素解析</a></li>
-  <li><a href="#結論と反省改善点" id="toc-結論と反省改善点" class="nav-link" data-scroll-target="#結論と反省改善点"><span class="header-section-number">9</span> 結論と反省・改善点</a></li>
-  <li><a href="#参考ウェブサイト" id="toc-参考ウェブサイト" class="nav-link" data-scroll-target="#参考ウェブサイト"><span class="header-section-number">10</span> 参考ウェブサイト</a></li>
+  <li><a href="#形態素解析レビュー分析" id="toc-形態素解析レビュー分析" class="nav-link" data-scroll-target="#形態素解析レビュー分析"><span class="header-section-number">8</span> 形態素解析(レビュー分析)</a>
+  <ul class="collapse">
+  <li><a href="#仮説検証" id="toc-仮説検証" class="nav-link" data-scroll-target="#仮説検証"><span class="header-section-number">8.1</span> 仮説検証</a></li>
+  </ul></li>
+  <li><a href="#その他のジャンルの形態素解析" id="toc-その他のジャンルの形態素解析" class="nav-link" data-scroll-target="#その他のジャンルの形態素解析"><span class="header-section-number">9</span> その他のジャンルの形態素解析</a></li>
+  <li><a href="#結論と反省改善点" id="toc-結論と反省改善点" class="nav-link" data-scroll-target="#結論と反省改善点"><span class="header-section-number">10</span> 結論と反省・改善点</a></li>
+  <li><a href="#参考ウェブサイト" id="toc-参考ウェブサイト" class="nav-link" data-scroll-target="#参考ウェブサイト"><span class="header-section-number">11</span> 参考ウェブサイト</a></li>
   </ul>
 </nav>
     </div>
@@ -429,7 +432,10 @@ ul.task-list li input[type="checkbox"] {
 <p>先ほどの情報をまとめたグラフである。</p>
 <p><a href="ジャンル別分布.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="ジャンル別分布.png" class="img-fluid"></a></p>
 <p>これはジャンル別のプレイ時間を評価別に散布図にしたものである。こう見ると、Casualの離脱層がいかに少ないか一目瞭然である。 また、Adventureに注目してみると、皆ある一定の時間にまとまっていることが見て取れる。これも、先ほど言ったようにAdventureが完結型ゲームであることの影響が大きそうだ。また、不評層もある程度遊んでからやめているのがデータからわかる。SimulationもAdventureと同じようなグラフになっているが、ばらつきが少し多いように見える。また、Indie・Strategy・RPGにおいては不評のタイミングが色濃く出ているのが特徴的だ。皆１００時間ほど遊んでやめているため、そこそこプレイしたが、ある仕様に耐え切れずに離脱するケースが多いのだと推察できる。</p>
-<p>#形態素解析(レビュー分析)</p>
+</section>
+</section>
+<section id="形態素解析レビュー分析" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> 形態素解析(レビュー分析)</h1>
 <p>今回のレビュー分析では、前段階で特に特徴的だったIndieのみに絞って行おうと思う。 まず早期レビュー組、中期レビュー組、長期レビュー組に分け、それぞれのレビューにおける特徴的な単語を抽出したいと思う。</p>
 <p><a href="Indie1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="Indie1.png" class="img-fluid"></a></p>
 <p>これはプレイ時間が30時間未満の層のレビューから抽出した特徴的な単語だ。好評の方では前作との繋がりや、ステージ・雰囲気・グラフィック・世界などの世界観をほめたたえるようなレビューがよくあるのが分かる。</p>
@@ -440,21 +446,22 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="Indie3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img src="Indie3.png" class="img-fluid"></a></p>
 <p>この層は150時間以上遊んだコアプレイヤーからの意見をまとめている。</p>
 <p>不満レビューからはアプデ、追加、バランス、開発、調整などの単語が軒並みランクインしていることを考えても、アプデの仕様変更などで急にゲームが変わってしまい、裏切られたようになってしまっているのが感じ取れる。</p>
-</section>
-<section id="仮説検証" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="仮説検証"><span class="header-section-number">7.2</span> 仮説検証</h2>
-<p>仮説として立てた、初期の高評価と長期の低評価の頻出単語を確認して、本当に関連性があるのか確かめたいと思う。 この仮説は、初期のファーストインプレッションとしてそのゲームを好印象にした要素が、長期にわたって遊んでいく中で様々なアップデートによって変わってしまい、結果的に離脱してしまうのではないかと思って立てた。実際に比較してみると <img src="Indie1.png" class="img-fluid"></p>
-<p>ステージ、前作、カード、雰囲気、グラフィックなどの言葉が並んでいる。 一方長期離脱組では、 <img src="Indie3.png" class="img-fluid"></p>
+<section id="仮説検証" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="仮説検証"><span class="header-section-number">8.1</span> 仮説検証</h2>
+<p>仮説として立てた、初期の高評価と長期の低評価の頻出単語を確認して、本当に関連性があるのか確かめたいと思う。 この仮説は、初期のファーストインプレッションとしてそのゲームを好印象にした要素が、長期にわたって遊んでいく中で様々なアップデートによって変わってしまい、結果的に離脱してしまうのではないかと思って立てた。実際に比較してみると</p>
+<p><a href="Indie1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img src="Indie1.png" class="img-fluid"></a></p>
+<p>ステージ、前作、カード、雰囲気、グラフィックなどの言葉が並んでいる。 一方長期離脱組では、</p>
+<p><a href="Indie3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img src="Indie3.png" class="img-fluid"></a></p>
 <p>同じようにカード、アイテムなどそのゲームを象徴するような単語が一部見られた。あまりに抽象的すぎるためこれで断定は出来ないが、ある程度の関連性があるといっても良さそうである。</p>
 </section>
 </section>
-<section id="その他のジャンルの形態素解析" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> その他のジャンルの形態素解析</h1>
+<section id="その他のジャンルの形態素解析" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> その他のジャンルの形態素解析</h1>
 <p><img src="Action1.png" class="img-fluid"> <img src="Action2.png" class="img-fluid"> <img src="Action3.png" class="img-fluid"></p>
 <p><img src="Strategy1.png" class="img-fluid"> <img src="Strategy2.png" class="img-fluid"> <img src="Strategy3.png" class="img-fluid"> <img src="RPG1.png" class="img-fluid"> <img src="RPG2.png" class="img-fluid"> <img src="RPG3.png" class="img-fluid"> <img src="Simulation1.png" class="img-fluid"> <img src="Simulation2.png" class="img-fluid"> <img src="Simulation3.png" class="img-fluid"> <img src="Adventure1.png" class="img-fluid"> <img src="Adventure2.png" class="img-fluid"> <img src="Adventure3.png" class="img-fluid"> <img src="Casual1.png" class="img-fluid"> <img src="Casual2.png" class="img-fluid"> <img src="Casual3.png" class="img-fluid"></p>
 </section>
-<section id="結論と反省改善点" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> 結論と反省・改善点</h1>
+<section id="結論と反省改善点" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> 結論と反省・改善点</h1>
 <p>結果として、自分が立てた仮説はある程度立証されたので良かった。また、プレイ時間と離脱理由という数字と文字を組み合わせることでより多角的に分析できたのが良かったと思う。今回はIndieにしかレビュー分析をかけていないが、それぞれのユーザー層に応じてレビューに顕著な差が表れたので、RQは統計的に十分有意であると言える。</p>
 <p>そして、この研究の副産物として、ジャンル別の傾向がはっきりしてきたので、様々な人に合うゲームを診断することも出来るようになった。</p>
 <p>しかし、今回の研究の反省点として、ジャンルを跨いでゲームがかぶってしまう問題があった。 例えば7days to dieというゲームは5ジャンルにおいて登場している。</p>
@@ -462,8 +469,8 @@ ul.task-list li input[type="checkbox"] {
 <p>ランキングからゲームの除外をするのは恣意的な操作に当たるので今回はそのままにしたが、レビュー数も2000件以上だったのも相まって今回の研究に大きな影響を及ぼしていると思う。</p>
 <p>また、APIから取得するときにSteam側の日本語フィルターが甘くなり、英語のレビューが日本語扱いで流れてくることがしばしばあった。今回はそのまま通してしまったが、同じようなことを防ぐために今後はフィルターをローカルにも用意した方がいいなと感じた。</p>
 </section>
-<section id="参考ウェブサイト" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> 参考ウェブサイト</h1>
+<section id="参考ウェブサイト" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> 参考ウェブサイト</h1>
 <p>Steamゲームランキング - 日本人に人気のゲーム　https://gamelog-jp.com/ranking/ Aikの技術日記 - SteamAPIについてまとめてみた　Part3 https://aik0aaat.hatenadiary.jp/entry/2020/10/11/002757</p>
 
 
