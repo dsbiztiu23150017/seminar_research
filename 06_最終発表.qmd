@@ -1,5 +1,5 @@
 ---
-title: "中間報告発表会"
+title: "最終発表"
 author: "栗原　爽汰"
 format: html
 ---
