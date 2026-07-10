@@ -318,4 +318,6 @@ RQ：離脱時期、レビューの賛否に応じてレビュートピックに
 
 # 参考ウェブサイト
 
-Steamゲームランキング - 日本人に人気のゲーム　https://gamelog-jp.com/ranking/ Aikの技術日記 - SteamAPIについてまとめてみた　Part3 https://aik0aaat.hatenadiary.jp/entry/2020/10/11/002757
+Steamゲームランキング - 日本人に人気のゲーム　https://gamelog-jp.com/ranking/ Aikの技術日記 -
+
+SteamAPIについてまとめてみた　Part3 https://aik0aaat.hatenadiary.jp/entry/2020/10/11/002757
